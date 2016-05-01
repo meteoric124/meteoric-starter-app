@@ -1,0 +1,30 @@
+<template name="layout">
+    <div> <!-- Needs a root DOM element. -->
+        {{#ionSideMenus}}
+            {{#ionSideMenu}}
+                <div class="bar bar-header bar-dark">
+                    <h1 class="title">Left Menu</h1>
+                </div>
+                <div class="content has-header">
+                    <div class="list">
+                        <a href="/constructors" class="item" menu-close>Constructors</a>
+                        <a href="/drivers" class="item" menu-close>Drivers</a>
+                        <a href="/about" class="item" menu-close>About</a>
+                    </div>
+
+                </div>
+            {{/ionSideMenu}}
+
+            {{#ionSideMenuContent}}
+                {{#ionNavBar class="bar-assertive"}}
+                    {{#ionNavBackButton}}{{/ionNavBackButton}}
+                {{/ionNavBar}}
+
+                {{#ionNavView}}
+                    {{> yield}}
+                {{/ionNavView}}
+
+            {{/ionSideMenuContent}}
+        {{/ionSideMenus}}
+    </div>
+</template>

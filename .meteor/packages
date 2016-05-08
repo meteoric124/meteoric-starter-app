@@ -20,4 +20,4 @@ insecure                # Allow all DB writes from clients (for prototyping)
 
 iron:router             # Thiis the only supported router atm.
 
-meteoric124:meteoric@1.2.4-beta.16  # Meteoric mobile framework.
+meteoric124:meteoric@1.2.4-beta.17  # Meteoric mobile framework.
